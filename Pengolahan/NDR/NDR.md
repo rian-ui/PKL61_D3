@@ -19,19 +19,16 @@ Untuk menentukan estimasi kesalahan isian
 **Syntax** : 
 ```R
 ndr_func <- function(Yi_row,Yi_col) {
-  n_col <- length(Yi_row)
-  n_row <- length(Yi_col)
+  n_col <- length(Yi_col)
+  n_row <- length(Yi_row)  # matrix input harus simetris
+  n <- sum(Yi_row) 
   
-  n <- 100
-  ndr <- c() #intiation vector
-  k <- 0 #count from 0
+  NDR <- c() #intiation vector
   
   for (i in 1:n_row) {
-    for (j in 1:n_col) {
-      k = k + 1
-      ndr[k] <- 100*((Yi_row[j]-Yi_col[i])/n)
-    }  
+    NDR[i] <- 100*((Yi_row[i] - Yi_col[i]) / n)
   }
-  return(NDR <- matrix(ndr,ncol=n_col))
+  return(NDR)
 }
+
 ```

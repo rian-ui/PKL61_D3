@@ -78,7 +78,7 @@ cohen_kappa <- function(obser, w=FALSE) {
 bu <- matrix(c(16,4,3,6,10,0,2,1,8), 3, 3) #data ada di ppt pak agung
 m <- matrix(c(25,4,3,3,7,10,2,1,5,4,7,2,3,0,0,4), 4, 4) 
 
-cohen_kappa(obser=bu, w=T)
-cohen_kappa(obser=m, w=T)
+cohen_kappa(obser=bu, w=False) #unweighted
+cohen_kappa(obser=m, w=True) #weighted
 
 ```

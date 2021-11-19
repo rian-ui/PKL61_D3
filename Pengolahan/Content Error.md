@@ -3,7 +3,7 @@
 
 ## **1. Mengklasifikasikan data berdasarkan kategori yang ada**
 
-Syntax yang digunakan : 
+Syntax yang digunakan : [pengklasifikasian](/Pengolahan/classification/category-i.md)
 
 output dalam bentuk matrix
 
